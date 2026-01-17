@@ -152,10 +152,19 @@ _(Shabash!)_
 
 ```compare
 // 🔴 Bad Code
-function bad() {}
+function processOrder(order) {
+  // just do something
+  save(order);
+}
 ===
 // 🟢 Good Code
-function good() {}
+function processOrder(order) {
+  validateOrder(order);
+  calculateDiscount(order);
+  save(order);
+  notifyUser(order);
+}
+```
 
 Write down:
 
@@ -164,6 +173,7 @@ Write down:
 - What constraints do I have?
 
 <!-- notes: Is step ko skip mat karna please. I know you want to jump straight to coding, lekin 15 minute yahan lagana saves you 2 hours later. Write it down. Agar aap khud clear nahi ho, toh AI ghanta samajh payega. -->
+
 
 ---
 
