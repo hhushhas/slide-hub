@@ -1,6 +1,7 @@
 {
   "name": "intro-to-working-with-ai",
   "private": true,
+  "packageManager": "pnpm@12.8.1",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
